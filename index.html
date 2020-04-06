@@ -71,7 +71,7 @@
             // e 存有 mousemove event 傳來的參數
             const cursor = document.querySelector('.cursor');
             document.addEventListener('mousemove', e=>{
-                cursor.setAttribute("style", "top:" + (e.pageY - 10) + "px;"+ " left:" + (e.pageX - 10) + "px;");
+                cursor.setAttribute("style", "top:" + (e.pageY - 17) + "px;"+ " left:" + (e.pageX - 17) + "px;");
             })
 
             document.addEventListener('click', ()=>{
@@ -221,11 +221,6 @@
             color: 000022;
             padding: 0;
             margin: 0;
-            cursor: none;
-        }
-
-        a{
-            cursor: none;
         }
 
         a.icon {
@@ -287,8 +282,8 @@
           }
 
           .cursor{
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             border: 1px solid rgb(82, 82, 82);
             border-radius: 50%;
             transition-timing-function: ease-out;
